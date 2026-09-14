@@ -23,7 +23,14 @@ A minha stack principal inclui **C, Python, JavaScript e Kotlin**.
 ## ⚡ O que estou a fazer agora
 
 <!-- CURRENTLY:START -->
-🔎 A primeira atualização automática está a caminho.
+💻 Repositório público com push mais recente: <a href="https://github.com/FranciscoGraca1/PW_22409338_FranciscoGraca">PW_22409338_FranciscoGraca</a>
+
+🧩 Linguagem principal: JavaScript  
+🕒 Último push: 14/06/2026 às 21:55 UTC
+
+<sub>Atividade do repositório; pode incluir pushes de colaboradores ou bots.</sub>
+
+<sub>Última verificação: 14/09/2026 (UTC).</sub>
 <!-- CURRENTLY:END -->
 
 <sub>Resumo automático de atividade pública; não indica presença nem programação em tempo real.</sub>
