@@ -55,12 +55,12 @@ A minha stack principal inclui **C, Python, JavaScript e Kotlin**.
 
 <p align="center">
   <a href="https://github.com/FranciscoGraca1?tab=repositories">
-    <img src="https://github-readme-stats.vercel.app/api?username=FranciscoGraca1&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;rank_icon=github" width="495" alt="Estatísticas gerais do GitHub de Francisco Graça" />
+    <img src="./assets/stats.svg" width="495" alt="Estatísticas gerais do GitHub de Francisco Graça" />
   </a>
 </p>
 <p align="center">
   <a href="https://github.com/FranciscoGraca1?tab=repositories">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FranciscoGraca1&amp;layout=compact&amp;langs_count=8&amp;theme=tokyonight&amp;hide_border=true" width="420" alt="Linguagens mais usadas nos repositórios públicos" />
+    <img src="./assets/top-langs.svg" width="420" alt="Linguagens mais usadas nos repositórios públicos" />
   </a>
 </p>
 <p align="center">
