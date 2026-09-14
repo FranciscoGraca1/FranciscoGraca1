@@ -1,26 +1,147 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:0D1117,50:7C3AED,100:22D3EE&amp;height=220&amp;section=header&amp;text=Francisco%20Gra%C3%A7a&amp;fontSize=46&amp;fontColor=FFFFFF&amp;animation=fadeIn&amp;desc=Ciberseguran%C3%A7a%20%7C%20App%20Development&amp;descAlignY=70" width="100%" alt="Francisco Graça — Cibersegurança e Desenvolvimento de Aplicações" />
+  <img src="./assets/matrix-terminal.svg" width="100%" alt="Francisco Graça — estudante de Engenharia Informática. Cibersegurança / App Development. C, Python, JavaScript e Kotlin." />
 </p>
 
 <p align="center">
-  <a href="https://github.com/FranciscoGraca1">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;size=21&amp;duration=2800&amp;pause=1000&amp;color=22D3EE&amp;center=true&amp;vCenter=true&amp;width=650&amp;lines=Ol%C3%A1%2C+sou+o+Francisco+Gra%C3%A7a;Estudante+de+Engenharia+Inform%C3%A1tica;Ciberseguran%C3%A7a+%7C+App+Development;C+%7C+Python+%7C+JavaScript+%7C+Kotlin" width="650" alt="Olá, sou o Francisco Graça. Estudante de Engenharia Informática. Python, JavaScript, Kotlin e C." />
-  </a>
+  <a href="#-cat-profile"><code>01 / perfil</code></a> ·
+  <a href="#-ls-projects"><code>02 / projetos</code></a> ·
+  <a href="#-run-signal-lost"><code>03 / jogar</code></a> ·
+  <a href="#-cat-telemetry"><code>04 / atividade</code></a> ·
+  <a href="#-connect"><code>05 / contacto</code></a>
 </p>
+
+## $ cat profile
+
+Sou o **Francisco Graça**, estudante universitário de **Engenharia Informática**, com interesse em **Cibersegurança** e **Desenvolvimento de Aplicações**.
+
+```text
+francisco@matrix:~$ cat interests.conf
+
+[security]    compreender sistemas e as suas vulnerabilidades
+[apps]        transformar ideias em aplicações
+[learning]    construir bases sólidas, um projeto de cada vez
+```
+
+<p>
+  <a href="https://en.cppreference.com/w/c.html"><img src="https://img.shields.io/badge/C-06110B?style=for-the-badge&amp;logo=c&amp;logoColor=62FF9B" alt="C" /></a>
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-06110B?style=for-the-badge&amp;logo=python&amp;logoColor=62FF9B" alt="Python" /></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-06110B?style=for-the-badge&amp;logo=javascript&amp;logoColor=62FF9B" alt="JavaScript" /></a>
+  <a href="https://kotlinlang.org/"><img src="https://img.shields.io/badge/Kotlin-06110B?style=for-the-badge&amp;logo=kotlin&amp;logoColor=62FF9B" alt="Kotlin" /></a>
+</p>
+
+<details>
+<summary>▸ expandir / formação e stack</summary>
+
+**Formação:** estudante universitário de Engenharia Informática.
+
+<img src="https://skillicons.dev/icons?i=c,py,js,kotlin&amp;theme=dark" height="48" alt="C, Python, JavaScript e Kotlin" />
+
+</details>
+
+## $ ls projects
+
+**O código faz parte do percurso.** Explora os meus projetos e acompanha o que vou construindo.
+
+[![Abrir repositórios](https://img.shields.io/badge/OPEN_DIRECTORY-reposit%C3%B3rios-62FF9B?style=for-the-badge&labelColor=06110B)](https://github.com/FranciscoGraca1?tab=repositories)
+
+## $ run signal-lost
+
+```text
+┌─ SIGNAL LOST / terminal puzzle ────────────────────────┐
+│ Uma mensagem ficou presa num terminal de treino.      │
+│ Recupera a flag: três portas, três escolhas.           │
+│ Duração: ~1 minuto. Abre uma opção para avançar.       │
+└──────────────────────────────────────────────────────┘
+```
+
+<details>
+<summary>▶ INICIAR / estabelecer ligação</summary>
+
+### 01 — O sinal
+
+O terminal devolve `01000110 01000111`. São dois bytes em ASCII. Que mensagem recebeste?
+
+<details>
+<summary>▸ A / 01</summary>
+
+`[ RETRY ]` Lê cada grupo de oito bits como um carácter. 01000110 corresponde ao número decimal 70.
+
+</details>
+
+<details>
+<summary>▸ B / FG</summary>
+
+`[ SIGNAL FOUND ]` Correto: 70 = F e 71 = G.
+
+### 02 — A porta
+
+Este terminal de treino precisa de permitir que leias **um único ficheiro**. Que acesso escolhes?
+
+<details>
+<summary>▸ A / acesso de administrador</summary>
+
+`[ RETRY ]` É acesso a mais para esta tarefa. Escolhe apenas as permissões necessárias.
+
+</details>
+
+<details>
+<summary>▸ B / leitura apenas desse ficheiro</summary>
+
+`[ ACCESS SCOPED ]` Princípio do menor privilégio: apenas o acesso necessário.
+
+### 03 — A mensagem
+
+O ficheiro contém `Rkc=` e a nota `encoding: base64`. O que fazes?
+
+<details>
+<summary>▸ A / descodificar Base64</summary>
+
+```text
+$ decode Rkc=
+FG
+
+[ MISSION COMPLETE ]
+flag{FG_signal_restored}
+
+Mensagem recuperada. Bem-vindo ao meu perfil.
+```
+
+**Conseguiste recuperar o sinal.** Base64 é uma codificação reversível, não uma forma de cifragem.
+
+[Continuar a explorar os projetos →](https://github.com/FranciscoGraca1?tab=repositories)
+
+</details>
+
+<details>
+<summary>▸ B / procurar uma chave de desencriptação</summary>
+
+`[ RETRY ]` Base64 não requer uma chave: é uma codificação. Tenta a outra opção.
+
+</details>
+
+</details>
+
+</details>
+
+<details>
+<summary>▸ C / FF</summary>
+
+`[ RETRY ]` Os dois bytes são diferentes. O segundo carácter vem imediatamente depois de F.
+
+</details>
+
+</details>
+
+<sub>Jogo de escolhas no README. Sem temporizador ou pontuação guardada. Para reiniciar, atualiza a página.</sub>
+
+## $ cat telemetry
 
 <p align="center">
-  <a href="https://github.com/FranciscoGraca1?tab=followers"><img src="https://img.shields.io/github/followers/FranciscoGraca1?style=for-the-badge&amp;logo=github&amp;label=Followers&amp;color=7C3AED" alt="Seguidores no GitHub" /></a>
-  <a href="https://github.com/FranciscoGraca1?tab=repositories"><img src="https://img.shields.io/badge/Engenharia-Inform%C3%A1tica-22D3EE?style=for-the-badge" alt="Engenharia Informática" /></a>
-  <a href="mailto:franciscofilipegraca@gmail.com"><img src="https://img.shields.io/badge/Contacto-Email-7C3AED?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Enviar email" /></a>
+  <img src="./assets/github-contribution-grid-snake-dark.svg" width="100%" alt="Snake animada das minhas contribuições — visualização, não é o minijogo" />
 </p>
 
-## Sobre mim
-
-Sou o **Francisco Graça**, estudante universitário de **Engenharia Informática**.
-Tenho interesse em **Cibersegurança** e **Desenvolvimento de Aplicações**.
-A minha stack principal inclui **C, Python, JavaScript e Kotlin**.
-
-## ⚡ O que estou a fazer agora
+<details>
+<summary>▸ activity.log / última atividade pública</summary>
 
 <!-- CURRENTLY:START -->
 💻 Repositório público com push mais recente: <a href="https://github.com/FranciscoGraca1/PW_22409338_FranciscoGraca">PW_22409338_FranciscoGraca</a>
@@ -33,75 +154,29 @@ A minha stack principal inclui **C, Python, JavaScript e Kotlin**.
 <sub>Última verificação: 14/09/2026 (UTC).</sub>
 <!-- CURRENTLY:END -->
 
-<sub>Resumo automático de atividade pública; não indica presença nem programação em tempo real.</sub>
-
-## 🧰 Tecnologias
-
-### Linguagens
-
-<p>
-  <a href="https://www.python.org/"><img src="https://skillicons.dev/icons?i=py&amp;theme=dark" height="48" alt="Python" /></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://skillicons.dev/icons?i=js&amp;theme=dark" height="48" alt="JavaScript" /></a>
-  <a href="https://kotlinlang.org/"><img src="https://skillicons.dev/icons?i=kotlin&amp;theme=dark" height="48" alt="Kotlin" /></a>
-  <a href="https://en.cppreference.com/w/c.html"><img src="https://skillicons.dev/icons?i=c&amp;theme=dark" height="48" alt="C" /></a>
-</p>
-
-
-## 🚀 Projetos
-
-[Explorar os meus repositórios →](https://github.com/FranciscoGraca1?tab=repositories)
-
-## 📊 GitHub em números
-
-<p align="center">
-  <a href="https://github.com/FranciscoGraca1?tab=repositories">
-    <img src="./assets/stats.svg" width="495" alt="Estatísticas gerais do GitHub de Francisco Graça" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/FranciscoGraca1?tab=repositories">
-    <img src="./assets/top-langs.svg" width="420" alt="Linguagens mais usadas nos repositórios públicos" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/FranciscoGraca1">
-    <img src="https://streak-stats.demolab.com?user=FranciscoGraca1&amp;theme=tokyonight&amp;hide_border=true" width="495" alt="Sequência de dias com contribuições no GitHub" />
-  </a>
-</p>
-
-<sub>As linguagens refletem o código contabilizado pelo serviço, não o nível de domínio. O streak mede dias com contribuições, não apenas commits.</sub>
-
-## 🐍 Contribuições em movimento
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/github-contribution-grid-snake.svg" />
-  <img src="./assets/github-contribution-grid-snake-dark.svg" width="100%" alt="Animação snake do meu gráfico de contribuições" />
-</picture>
-
-<details>
-  <summary>🎓 Formação e certificações</summary>
-
-**Formação:** estudante universitário de Engenharia Informática.
-
-<!-- Acrescenta instituição, datas e certificações verificáveis com links. -->
+<sub>Atualização diária. A atividade do repositório pode incluir colaboradores ou bots; não indica presença em tempo real.</sub>
 
 </details>
 
 <details>
-  <summary>🛠️ Experiência e projetos extra</summary>
+<summary>▸ stats / estatísticas e linguagens</summary>
 
-[Ver os meus projetos no GitHub](https://github.com/FranciscoGraca1?tab=repositories).
+<p align="center">
+  <img src="./assets/stats.svg" width="495" alt="Estatísticas públicas do GitHub" />
+  <img src="./assets/top-langs.svg" width="420" alt="Linguagens mais usadas nos repositórios públicos" />
+  <img src="https://streak-stats.demolab.com?user=FranciscoGraca1&amp;background=06110B&amp;border=205534&amp;stroke=205534&amp;ring=62FF9B&amp;fire=62FF9B&amp;currStreakNum=D1EDDA&amp;sideNums=D1EDDA&amp;currStreakLabel=62FF9B&amp;sideLabels=82AC91&amp;dates=82AC91" width="495" alt="Sequência de dias com contribuições" />
+</p>
 
-<!-- Acrescenta apenas experiências e projetos reais. -->
+<sub>As linguagens refletem o código contabilizado, não o nível de domínio. O streak inclui contribuições além de commits.</sub>
 
 </details>
 
----
+## $ connect
 
 <p align="center">
-  <a href="mailto:franciscofilipegraca@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email" /></a>
-  <a href="https://www.linkedin.com/in/francisco-gra%C3%A7a-08453b220/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge" alt="LinkedIn de Francisco Graça" /></a>
+  <a href="mailto:franciscofilipegraca@gmail.com"><img src="https://img.shields.io/badge/EMAIL-62FF9B?style=for-the-badge&amp;logo=gmail&amp;logoColor=06110B" alt="Enviar email a Francisco" /></a>
+  <a href="https://www.linkedin.com/in/francisco-gra%C3%A7a-08453b220/"><img src="https://img.shields.io/badge/LINKEDIN-62FF9B?style=for-the-badge" alt="LinkedIn de Francisco Graça" /></a>
+  <a href="https://github.com/FranciscoGraca1?tab=followers"><img src="https://img.shields.io/github/followers/FranciscoGraca1?style=for-the-badge&amp;label=FOLLOWERS&amp;labelColor=06110B&amp;color=62FF9B" alt="Seguidores no GitHub" /></a>
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:22D3EE,50:7C3AED,100:0D1117&amp;height=110&amp;section=footer" width="100%" alt="" />
+<p align="center"><sub><code>francisco@matrix:~$ exit · a próxima linha ainda está por escrever.</code></sub></p>
