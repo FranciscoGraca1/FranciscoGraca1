@@ -164,7 +164,7 @@ Mensagem recuperada. Bem-vindo ao meu perfil.
 <p align="center">
   <img src="./assets/stats.svg" width="495" alt="Estatísticas públicas do GitHub" />
   <img src="./assets/top-langs.svg" width="420" alt="Linguagens mais usadas nos repositórios públicos" />
-  <img src="https://streak-stats.demolab.com?user=FranciscoGraca1&amp;background=06110B&amp;border=205534&amp;stroke=205534&amp;ring=62FF9B&amp;fire=62FF9B&amp;currStreakNum=D1EDDA&amp;sideNums=D1EDDA&amp;currStreakLabel=62FF9B&amp;sideLabels=82AC91&amp;dates=82AC91" width="495" alt="Sequência de dias com contribuições" />
+  <a href="https://streak-stats.demolab.com/?user=FranciscoGraca1&amp;theme=dark">Consultar streak de contribuições ↗</a>
 </p>
 
 <sub>As linguagens refletem o código contabilizado, não o nível de domínio. O streak inclui contribuições além de commits.</sub>
