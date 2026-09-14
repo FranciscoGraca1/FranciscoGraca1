@@ -1,0 +1,453 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+<title id="title">Francisco Graça — whoami</title>
+<desc id="desc">Terminal verde sobre preto com chuva de código animada. Francisco Graça, estudante de Engenharia Informática. Cibersegurança e desenvolvimento de aplicações. C, Python, JavaScript e Kotlin.</desc>
+<defs>
+ <linearGradient id="bg"><stop stop-color="#030a07"/><stop offset="1" stop-color="#071b10"/></linearGradient>
+ <linearGradient id="fade"><stop stop-color="#050d08"/><stop offset=".67" stop-color="#050d08" stop-opacity=".98"/><stop offset="1" stop-color="#050d08" stop-opacity="0"/></linearGradient>
+ <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><path d="M0 0H4" stroke="#58ff93" stroke-opacity=".025"/></pattern>
+ <clipPath id="frame"><rect x="1" y="1" width="958" height="418" rx="16"/></clipPath>
+</defs>
+<g clip-path="url(#frame)">
+<rect width="960" height="420" fill="url(#bg)"/>
+
+<g fill="#32e879" opacity="0.29" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="12s" begin="-8s" repeatCount="indefinite"/>
+<text x="440" y="0">}</text>
+<text x="440" y="22">}</text>
+<text x="440" y="44">{</text>
+<text x="440" y="66">E</text>
+<text x="440" y="88">1</text>
+<text x="440" y="110">D</text>
+<text x="440" y="132">E</text>
+<text x="440" y="154">B</text>
+<text x="440" y="176">1</text>
+<text x="440" y="198">C</text>
+<text x="440" y="220">/</text>
+<text x="440" y="242">0</text>
+<text x="440" y="264">0</text>
+<text x="440" y="286">1</text>
+<text x="440" y="308">}</text>
+<text x="440" y="330">}</text>
+</g>
+<g fill="#32e879" opacity="0.25" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="12s" begin="-17s" repeatCount="indefinite"/>
+<text x="464" y="0">}</text>
+<text x="464" y="22">E</text>
+<text x="464" y="44">D</text>
+<text x="464" y="66">E</text>
+<text x="464" y="88">B</text>
+<text x="464" y="110">/</text>
+<text x="464" y="132">}</text>
+<text x="464" y="154">A</text>
+<text x="464" y="176">C</text>
+<text x="464" y="198">[</text>
+<text x="464" y="220">F</text>
+<text x="464" y="242">0</text>
+<text x="464" y="264">F</text>
+<text x="464" y="286">F</text>
+<text x="464" y="308">{</text>
+<text x="464" y="330">E</text>
+</g>
+<g fill="#32e879" opacity="0.23" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="16s" begin="-4s" repeatCount="indefinite"/>
+<text x="488" y="0">}</text>
+<text x="488" y="22">F</text>
+<text x="488" y="44">]</text>
+<text x="488" y="66">1</text>
+<text x="488" y="88">1</text>
+<text x="488" y="110">/</text>
+<text x="488" y="132">1</text>
+<text x="488" y="154">]</text>
+<text x="488" y="176">]</text>
+<text x="488" y="198">C</text>
+<text x="488" y="220">[</text>
+<text x="488" y="242">F</text>
+<text x="488" y="264">0</text>
+<text x="488" y="286">E</text>
+<text x="488" y="308">A</text>
+<text x="488" y="330">B</text>
+</g>
+<g fill="#32e879" opacity="0.15" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="18s" begin="-2s" repeatCount="indefinite"/>
+<text x="512" y="0">B</text>
+<text x="512" y="22">[</text>
+<text x="512" y="44">D</text>
+<text x="512" y="66">C</text>
+<text x="512" y="88">]</text>
+<text x="512" y="110">C</text>
+<text x="512" y="132">}</text>
+<text x="512" y="154">E</text>
+<text x="512" y="176">1</text>
+<text x="512" y="198">0</text>
+<text x="512" y="220">D</text>
+<text x="512" y="242">}</text>
+<text x="512" y="264">F</text>
+<text x="512" y="286">[</text>
+<text x="512" y="308">1</text>
+<text x="512" y="330">}</text>
+</g>
+<g fill="#32e879" opacity="0.35" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="18s" begin="-8s" repeatCount="indefinite"/>
+<text x="536" y="0">A</text>
+<text x="536" y="22">D</text>
+<text x="536" y="44">]</text>
+<text x="536" y="66">{</text>
+<text x="536" y="88">]</text>
+<text x="536" y="110">]</text>
+<text x="536" y="132">}</text>
+<text x="536" y="154">D</text>
+<text x="536" y="176">[</text>
+<text x="536" y="198">E</text>
+<text x="536" y="220">D</text>
+<text x="536" y="242">D</text>
+<text x="536" y="264">1</text>
+<text x="536" y="286">C</text>
+<text x="536" y="308">D</text>
+<text x="536" y="330">{</text>
+</g>
+<g fill="#32e879" opacity="0.26" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="15s" begin="-5s" repeatCount="indefinite"/>
+<text x="560" y="0">A</text>
+<text x="560" y="22">/</text>
+<text x="560" y="44">[</text>
+<text x="560" y="66">D</text>
+<text x="560" y="88">E</text>
+<text x="560" y="110">B</text>
+<text x="560" y="132">}</text>
+<text x="560" y="154">D</text>
+<text x="560" y="176">]</text>
+<text x="560" y="198">F</text>
+<text x="560" y="220">F</text>
+<text x="560" y="242">0</text>
+<text x="560" y="264">}</text>
+<text x="560" y="286">0</text>
+<text x="560" y="308">F</text>
+<text x="560" y="330">]</text>
+</g>
+<g fill="#32e879" opacity="0.22" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="13s" begin="-6s" repeatCount="indefinite"/>
+<text x="584" y="0">C</text>
+<text x="584" y="22">E</text>
+<text x="584" y="44">]</text>
+<text x="584" y="66">}</text>
+<text x="584" y="88">D</text>
+<text x="584" y="110">A</text>
+<text x="584" y="132">/</text>
+<text x="584" y="154">D</text>
+<text x="584" y="176">A</text>
+<text x="584" y="198">{</text>
+<text x="584" y="220">[</text>
+<text x="584" y="242">{</text>
+<text x="584" y="264">}</text>
+<text x="584" y="286">E</text>
+<text x="584" y="308">B</text>
+<text x="584" y="330">B</text>
+</g>
+<g fill="#32e879" opacity="0.19" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="21s" begin="-13s" repeatCount="indefinite"/>
+<text x="608" y="0">C</text>
+<text x="608" y="22">/</text>
+<text x="608" y="44">]</text>
+<text x="608" y="66">}</text>
+<text x="608" y="88">{</text>
+<text x="608" y="110">B</text>
+<text x="608" y="132">A</text>
+<text x="608" y="154">1</text>
+<text x="608" y="176">F</text>
+<text x="608" y="198">0</text>
+<text x="608" y="220">1</text>
+<text x="608" y="242">{</text>
+<text x="608" y="264">D</text>
+<text x="608" y="286">{</text>
+<text x="608" y="308">F</text>
+<text x="608" y="330">D</text>
+</g>
+<g fill="#32e879" opacity="0.23" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="13s" begin="-12s" repeatCount="indefinite"/>
+<text x="632" y="0">/</text>
+<text x="632" y="22">C</text>
+<text x="632" y="44">A</text>
+<text x="632" y="66">B</text>
+<text x="632" y="88">[</text>
+<text x="632" y="110">B</text>
+<text x="632" y="132">0</text>
+<text x="632" y="154">D</text>
+<text x="632" y="176">E</text>
+<text x="632" y="198">1</text>
+<text x="632" y="220">D</text>
+<text x="632" y="242">B</text>
+<text x="632" y="264">F</text>
+<text x="632" y="286">[</text>
+<text x="632" y="308">F</text>
+<text x="632" y="330">D</text>
+</g>
+<g fill="#32e879" opacity="0.21" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="16s" begin="-13s" repeatCount="indefinite"/>
+<text x="656" y="0">{</text>
+<text x="656" y="22">A</text>
+<text x="656" y="44">0</text>
+<text x="656" y="66">E</text>
+<text x="656" y="88">E</text>
+<text x="656" y="110">[</text>
+<text x="656" y="132">B</text>
+<text x="656" y="154">F</text>
+<text x="656" y="176">{</text>
+<text x="656" y="198">B</text>
+<text x="656" y="220">1</text>
+<text x="656" y="242">D</text>
+<text x="656" y="264">[</text>
+<text x="656" y="286">D</text>
+<text x="656" y="308">B</text>
+<text x="656" y="330">C</text>
+</g>
+<g fill="#32e879" opacity="0.17" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="17s" begin="-5s" repeatCount="indefinite"/>
+<text x="680" y="0">B</text>
+<text x="680" y="22">F</text>
+<text x="680" y="44">B</text>
+<text x="680" y="66">0</text>
+<text x="680" y="88">C</text>
+<text x="680" y="110">]</text>
+<text x="680" y="132">A</text>
+<text x="680" y="154">0</text>
+<text x="680" y="176">1</text>
+<text x="680" y="198">]</text>
+<text x="680" y="220">F</text>
+<text x="680" y="242">[</text>
+<text x="680" y="264">}</text>
+<text x="680" y="286">0</text>
+<text x="680" y="308">}</text>
+<text x="680" y="330">C</text>
+</g>
+<g fill="#32e879" opacity="0.37" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="13s" begin="-15s" repeatCount="indefinite"/>
+<text x="704" y="0">1</text>
+<text x="704" y="22">F</text>
+<text x="704" y="44">B</text>
+<text x="704" y="66">F</text>
+<text x="704" y="88">{</text>
+<text x="704" y="110">{</text>
+<text x="704" y="132">D</text>
+<text x="704" y="154">A</text>
+<text x="704" y="176">B</text>
+<text x="704" y="198">{</text>
+<text x="704" y="220">[</text>
+<text x="704" y="242">B</text>
+<text x="704" y="264">C</text>
+<text x="704" y="286">/</text>
+<text x="704" y="308">}</text>
+<text x="704" y="330">B</text>
+</g>
+<g fill="#32e879" opacity="0.32" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="23s" begin="-6s" repeatCount="indefinite"/>
+<text x="728" y="0">E</text>
+<text x="728" y="22">[</text>
+<text x="728" y="44">/</text>
+<text x="728" y="66">D</text>
+<text x="728" y="88">D</text>
+<text x="728" y="110">]</text>
+<text x="728" y="132">A</text>
+<text x="728" y="154">B</text>
+<text x="728" y="176">A</text>
+<text x="728" y="198">1</text>
+<text x="728" y="220">}</text>
+<text x="728" y="242">}</text>
+<text x="728" y="264">1</text>
+<text x="728" y="286">]</text>
+<text x="728" y="308">0</text>
+<text x="728" y="330">C</text>
+</g>
+<g fill="#32e879" opacity="0.26" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="21s" begin="-7s" repeatCount="indefinite"/>
+<text x="752" y="0">0</text>
+<text x="752" y="22">1</text>
+<text x="752" y="44">E</text>
+<text x="752" y="66">D</text>
+<text x="752" y="88">0</text>
+<text x="752" y="110">}</text>
+<text x="752" y="132">1</text>
+<text x="752" y="154">0</text>
+<text x="752" y="176">]</text>
+<text x="752" y="198">1</text>
+<text x="752" y="220">B</text>
+<text x="752" y="242">}</text>
+<text x="752" y="264">[</text>
+<text x="752" y="286">D</text>
+<text x="752" y="308">A</text>
+<text x="752" y="330">}</text>
+</g>
+<g fill="#32e879" opacity="0.26" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="23s" begin="-18s" repeatCount="indefinite"/>
+<text x="776" y="0">C</text>
+<text x="776" y="22">A</text>
+<text x="776" y="44">}</text>
+<text x="776" y="66">F</text>
+<text x="776" y="88">A</text>
+<text x="776" y="110">F</text>
+<text x="776" y="132">/</text>
+<text x="776" y="154">}</text>
+<text x="776" y="176">1</text>
+<text x="776" y="198">1</text>
+<text x="776" y="220">D</text>
+<text x="776" y="242">/</text>
+<text x="776" y="264">]</text>
+<text x="776" y="286">/</text>
+<text x="776" y="308">/</text>
+<text x="776" y="330">A</text>
+</g>
+<g fill="#32e879" opacity="0.34" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="12s" begin="-20s" repeatCount="indefinite"/>
+<text x="800" y="0">D</text>
+<text x="800" y="22">1</text>
+<text x="800" y="44">0</text>
+<text x="800" y="66">/</text>
+<text x="800" y="88">E</text>
+<text x="800" y="110">]</text>
+<text x="800" y="132">F</text>
+<text x="800" y="154">1</text>
+<text x="800" y="176">}</text>
+<text x="800" y="198">}</text>
+<text x="800" y="220">}</text>
+<text x="800" y="242">B</text>
+<text x="800" y="264">A</text>
+<text x="800" y="286">{</text>
+<text x="800" y="308">/</text>
+<text x="800" y="330">{</text>
+</g>
+<g fill="#32e879" opacity="0.19" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="15s" begin="-2s" repeatCount="indefinite"/>
+<text x="824" y="0">A</text>
+<text x="824" y="22">F</text>
+<text x="824" y="44">B</text>
+<text x="824" y="66">1</text>
+<text x="824" y="88">0</text>
+<text x="824" y="110">D</text>
+<text x="824" y="132">B</text>
+<text x="824" y="154">0</text>
+<text x="824" y="176">1</text>
+<text x="824" y="198">F</text>
+<text x="824" y="220">}</text>
+<text x="824" y="242">{</text>
+<text x="824" y="264">/</text>
+<text x="824" y="286">A</text>
+<text x="824" y="308">A</text>
+<text x="824" y="330">}</text>
+</g>
+<g fill="#32e879" opacity="0.34" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="12s" begin="-5s" repeatCount="indefinite"/>
+<text x="848" y="0">/</text>
+<text x="848" y="22">0</text>
+<text x="848" y="44">/</text>
+<text x="848" y="66">[</text>
+<text x="848" y="88">F</text>
+<text x="848" y="110">F</text>
+<text x="848" y="132">A</text>
+<text x="848" y="154">[</text>
+<text x="848" y="176">/</text>
+<text x="848" y="198">E</text>
+<text x="848" y="220">E</text>
+<text x="848" y="242">F</text>
+<text x="848" y="264">B</text>
+<text x="848" y="286">D</text>
+<text x="848" y="308">E</text>
+<text x="848" y="330">A</text>
+</g>
+<g fill="#32e879" opacity="0.16" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="16s" begin="-6s" repeatCount="indefinite"/>
+<text x="872" y="0">0</text>
+<text x="872" y="22">C</text>
+<text x="872" y="44">E</text>
+<text x="872" y="66">B</text>
+<text x="872" y="88">0</text>
+<text x="872" y="110">E</text>
+<text x="872" y="132">]</text>
+<text x="872" y="154">0</text>
+<text x="872" y="176">0</text>
+<text x="872" y="198">C</text>
+<text x="872" y="220">A</text>
+<text x="872" y="242">B</text>
+<text x="872" y="264">B</text>
+<text x="872" y="286">{</text>
+<text x="872" y="308">0</text>
+<text x="872" y="330">B</text>
+</g>
+<g fill="#32e879" opacity="0.14" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="14s" begin="-2s" repeatCount="indefinite"/>
+<text x="896" y="0">C</text>
+<text x="896" y="22">1</text>
+<text x="896" y="44">D</text>
+<text x="896" y="66">}</text>
+<text x="896" y="88">/</text>
+<text x="896" y="110">1</text>
+<text x="896" y="132">C</text>
+<text x="896" y="154">}</text>
+<text x="896" y="176">C</text>
+<text x="896" y="198">C</text>
+<text x="896" y="220">0</text>
+<text x="896" y="242">C</text>
+<text x="896" y="264">1</text>
+<text x="896" y="286">/</text>
+<text x="896" y="308">D</text>
+<text x="896" y="330">C</text>
+</g>
+<g fill="#32e879" opacity="0.27" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="17s" begin="-8s" repeatCount="indefinite"/>
+<text x="920" y="0">}</text>
+<text x="920" y="22">D</text>
+<text x="920" y="44">E</text>
+<text x="920" y="66">]</text>
+<text x="920" y="88">}</text>
+<text x="920" y="110">[</text>
+<text x="920" y="132">/</text>
+<text x="920" y="154">{</text>
+<text x="920" y="176">D</text>
+<text x="920" y="198">D</text>
+<text x="920" y="220">[</text>
+<text x="920" y="242">A</text>
+<text x="920" y="264">]</text>
+<text x="920" y="286">F</text>
+<text x="920" y="308">1</text>
+<text x="920" y="330">0</text>
+</g>
+<g fill="#32e879" opacity="0.24" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="21s" begin="-3s" repeatCount="indefinite"/>
+<text x="944" y="0">1</text>
+<text x="944" y="22">B</text>
+<text x="944" y="44">}</text>
+<text x="944" y="66">B</text>
+<text x="944" y="88">[</text>
+<text x="944" y="110">{</text>
+<text x="944" y="132">]</text>
+<text x="944" y="154">1</text>
+<text x="944" y="176">}</text>
+<text x="944" y="198">]</text>
+<text x="944" y="220">[</text>
+<text x="944" y="242">{</text>
+<text x="944" y="264">A</text>
+<text x="944" y="286">B</text>
+<text x="944" y="308">E</text>
+<text x="944" y="330">[</text>
+</g>
+<g fill="#32e879" opacity="0.28" font-family="monospace" font-size="14"><animateTransform attributeName="transform" type="translate" from="0 -270" to="0 460" dur="22s" begin="-16s" repeatCount="indefinite"/>
+<text x="968" y="0">0</text>
+<text x="968" y="22">D</text>
+<text x="968" y="44">B</text>
+<text x="968" y="66">[</text>
+<text x="968" y="88">D</text>
+<text x="968" y="110">1</text>
+<text x="968" y="132">{</text>
+<text x="968" y="154">[</text>
+<text x="968" y="176">1</text>
+<text x="968" y="198">1</text>
+<text x="968" y="220">E</text>
+<text x="968" y="242">B</text>
+<text x="968" y="264">{</text>
+<text x="968" y="286">[</text>
+<text x="968" y="308">[</text>
+<text x="968" y="330">C</text>
+</g>
+<rect width="960" height="420" fill="url(#fade)"/>
+<rect width="960" height="44" fill="#09150e"/>
+<path d="M0 44H960" stroke="#153d26"/>
+<g fill="#2d7045"><circle cx="24" cy="23" r="4"/><circle cx="40" cy="23" r="4"/><circle cx="56" cy="23" r="4"/></g>
+<g font-family="'Courier New',monospace">
+<text x="82" y="28" fill="#82ac91" font-size="12">francisco@matrix : ~ / profile</text>
+<text x="926" y="28" text-anchor="end" fill="#57fa91" font-size="11">SESSION 01</text>
+<text x="38" y="91" fill="#46f68a" font-size="17">$ whoami</text>
+<text x="36" y="149" fill="#dcffe6" font-size="46" font-weight="700" letter-spacing="-2">FRANCISCO GRAÇA</text>
+<text x="39" y="185" fill="#7fa98c" font-size="14">ESTUDANTE DE ENGENHARIA INFORMÁTICA</text>
+<path d="M38 209H563" stroke="#194b2d"/>
+<text x="38" y="247" fill="#46f68a" font-size="16">$ cat focus.txt</text>
+<text x="38" y="276" fill="#d1edda" font-size="16">Cibersegurança / App Development</text>
+<text x="38" y="318" fill="#46f68a" font-size="16">$ echo $STACK</text>
+<text x="38" y="347" fill="#d1edda" font-size="16">C · Python · JavaScript · Kotlin</text>
+<text x="38" y="393" fill="#7fa98c" font-size="12">[ estudante ]  aprender. construir. compreender.</text>
+<path d="M698 107h-20v180h20M858 107h20v180h-20" fill="none" stroke="#2f8b4e"/>
+<text x="778" y="217" text-anchor="middle" font-size="74" font-weight="700" fill="#5fff9a" opacity=".9">FG</text>
+<text x="778" y="252" text-anchor="middle" font-size="11" letter-spacing="3" fill="#83c99a">FOLLOW THE SIGNAL</text>
+<path d="M702 303h152" stroke="#194b2d"/>
+<circle cx="710" cy="303" r="3" fill="#89ffae"><animate attributeName="cx" values="710;846;710" dur="9s" repeatCount="indefinite"/></circle>
+<text x="778" y="335" text-anchor="middle" font-size="10" fill="#5ca673">01 / IDENTITY LOADED</text>
+</g>
+<rect width="960" height="420" fill="url(#scan)"/>
+</g>
+<rect x=".5" y=".5" width="959" height="419" rx="16" fill="none" stroke="#205534"/>
+</svg>
