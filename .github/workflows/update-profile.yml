@@ -1,0 +1,126 @@
+name: Atualizar perfil
+
+on:
+  schedule:
+    - cron: '23 6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - .github/workflows/update-profile.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Obter repositório
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+
+      - name: Gerar snake nos dois temas
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/github-contribution-grid-snake.svg
+            assets/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Atualizar atividade pública no README
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_OWNER: ${{ github.repository_owner }}
+          PROFILE_REPOSITORY: ${{ github.repository }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import html
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from urllib.parse import quote
+          from urllib.request import Request, urlopen
+
+          owner = os.environ['PROFILE_OWNER']
+          profile = os.environ['PROFILE_REPOSITORY'].lower()
+          repos = []
+          page = 1
+          while True:
+              url = (
+                  f'https://api.github.com/users/{quote(owner, safe="")}/repos'
+                  f'?type=owner&sort=pushed&direction=desc&per_page=100&page={page}'
+              )
+              request = Request(url, headers={
+                  'Authorization': 'Bearer ' + os.environ['GH_TOKEN'],
+                  'Accept': 'application/vnd.github+json',
+                  'User-Agent': 'profile-readme-updater',
+                  'X-GitHub-Api-Version': '2022-11-28',
+              })
+              with urlopen(request, timeout=30) as response:
+                  batch = json.load(response)
+              repos.extend(r for r in batch if (
+                  not r['fork'] and not r['archived'] and not r['private']
+                  and r['full_name'].lower() != profile and r.get('pushed_at')
+                  and r.get('size', 0) > 0
+              ))
+              if len(batch) < 100:
+                  break
+              page += 1
+
+          if repos:
+              repo = max(repos, key=lambda r: r['pushed_at'])
+              label = html.escape(repo['name'])
+              link = html.escape(repo['html_url'], quote=True)
+              pushed = datetime.fromisoformat(repo['pushed_at'].replace('Z', '+00:00'))
+              language = html.escape(repo.get('language') or 'Não identificada')
+              body = (
+                  f'💻 Repositório público com push mais recente: <a href="{link}">{label}</a>\n\n'
+                  f'🧩 Linguagem principal: {language}  \n'
+                  f'🕒 Último push: {pushed:%d/%m/%Y às %H:%M} UTC\n\n'
+                  '<sub>Atividade do repositório; pode incluir pushes de colaboradores ou bots.</sub>'
+              )
+          else:
+              body = '🌱 Ainda sem repositórios públicos elegíveis para apresentar.'
+
+          today = datetime.now(timezone.utc).strftime('%d/%m/%Y')
+          body += f'\n\n<sub>Última verificação: {today} (UTC).</sub>'
+          path = Path('README.md')
+          original = path.read_text(encoding='utf-8')
+          start, end = '<!-- CURRENTLY:START -->', '<!-- CURRENTLY:END -->'
+          if original.count(start) != 1 or original.count(end) != 1:
+              raise SystemExit('O README deve conter exatamente um par de marcadores CURRENTLY.')
+          before, remaining = original.split(start, 1)
+          if end not in remaining:
+              raise SystemExit('Os marcadores CURRENTLY estão fora de ordem.')
+          _, after = remaining.split(end, 1)
+          path.write_text(before + start + '\n' + body + '\n' + end + after, encoding='utf-8')
+          PY
+
+      - name: Guardar alterações
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- README.md assets/github-contribution-grid-snake.svg assets/github-contribution-grid-snake-dark.svg
+          if git diff --cached --quiet; then
+            echo "Sem alterações a publicar."
+            exit 0
+          fi
+          git commit -m "chore: atualizar atividade e snake do perfil"
+          git pull --rebase origin "$DEFAULT_BRANCH"
+          git push origin "HEAD:$DEFAULT_BRANCH"
