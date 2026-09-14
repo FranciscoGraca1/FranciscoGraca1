@@ -23,7 +23,7 @@ jobs:
     timeout-minutes: 15
     steps:
       - name: Obter repositório
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: ${{ github.event.repository.default_branch }}
           fetch-depth: 0
@@ -38,6 +38,24 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Gerar estatísticas
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github
+          path: assets/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Gerar linguagens
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&theme=tokyonight&hide_border=true
+          path: assets/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
       - name: Atualizar atividade pública no README
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -49,6 +67,7 @@ jobs:
           import html
           import json
           import os
+          import re
           from datetime import datetime, timezone
           from pathlib import Path
           from urllib.parse import quote
@@ -99,6 +118,8 @@ jobs:
           body += f'\n\n<sub>Última verificação: {today} (UTC).</sub>'
           path = Path('README.md')
           original = path.read_text(encoding='utf-8')
+          original = re.sub(r'https://github-readme-stats\.vercel\.app/api/top-langs/\?[^"\s]+', './assets/top-langs.svg', original)
+          original = re.sub(r'https://github-readme-stats\.vercel\.app/api\?[^"\s]+', './assets/stats.svg', original)
           start, end = '<!-- CURRENTLY:START -->', '<!-- CURRENTLY:END -->'
           if original.count(start) != 1 or original.count(end) != 1:
               raise SystemExit('O README deve conter exatamente um par de marcadores CURRENTLY.')
@@ -116,7 +137,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- README.md assets/github-contribution-grid-snake.svg assets/github-contribution-grid-snake-dark.svg
+          git add -- README.md assets/github-contribution-grid-snake.svg assets/github-contribution-grid-snake-dark.svg assets/stats.svg assets/top-langs.svg
           if git diff --cached --quiet; then
             echo "Sem alterações a publicar."
             exit 0
