@@ -34,7 +34,7 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             assets/github-contribution-grid-snake.svg
-            assets/github-contribution-grid-snake-dark.svg?palette=github-dark
+            assets/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#62FF9B&color_dots=#06110B,#12351F,#1E6337,#30A65A,#62FF9B
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -42,7 +42,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github
+          options: username=${{ github.repository_owner }}&show_icons=true&bg_color=06110B&title_color=62FF9B&text_color=D1EDDA&icon_color=62FF9B&border_color=205534&hide_border=false&rank_icon=github
           path: assets/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
@@ -51,7 +51,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&theme=tokyonight&hide_border=true
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&bg_color=06110B&title_color=62FF9B&text_color=D1EDDA&icon_color=62FF9B&border_color=205534&hide_border=false
           path: assets/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
