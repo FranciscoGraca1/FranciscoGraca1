@@ -144,14 +144,14 @@ Mensagem recuperada. Bem-vindo ao meu perfil.
 <summary>▸ activity.log / última atividade pública</summary>
 
 <!-- CURRENTLY:START -->
-💻 Repositório público com push mais recente: <a href="https://github.com/FranciscoGraca1/Tribus">Tribus</a>
+💻 Repositório público com push mais recente: <a href="https://github.com/FranciscoGraca1/RigRadar">RigRadar</a>
 
-🧩 Linguagem principal: Python  
-🕒 Último push: 21/09/2026 às 20:42 UTC
+🧩 Linguagem principal: JavaScript  
+🕒 Último push: 23/09/2026 às 10:01 UTC
 
 <sub>Atividade do repositório; pode incluir pushes de colaboradores ou bots.</sub>
 
-<sub>Última verificação: 22/09/2026 (UTC).</sub>
+<sub>Última verificação: 23/09/2026 (UTC).</sub>
 <!-- CURRENTLY:END -->
 
 <sub>Atualização diária. A atividade do repositório pode incluir colaboradores ou bots; não indica presença em tempo real.</sub>
