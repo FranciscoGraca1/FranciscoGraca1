@@ -33,25 +33,16 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            assets/github-contribution-grid-snake.svg
-            assets/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#62FF9B&color_dots=#06110B,#12351F,#1E6337,#30A65A,#62FF9B
+            assets/github-contribution-grid-snake.svg?color_snake=#0E1320&color_dots=#EBEDF0,#FCE7C2,#F8C978,#EFA63A,#C97F12
+            assets/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#FFB547&color_dots=#161D2C,#3D3220,#6E5426,#B5822F,#FFB547
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Gerar estatísticas
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&bg_color=06110B&title_color=62FF9B&text_color=D1EDDA&icon_color=62FF9B&border_color=205534&hide_border=false&rank_icon=github
-          path: assets/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: true
 
       - name: Gerar linguagens
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&bg_color=06110B&title_color=62FF9B&text_color=D1EDDA&icon_color=62FF9B&border_color=205534&hide_border=false
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&card_width=440&locale=pt-pt&exclude_repo=franciscograca22409338&bg_color=0E1320&title_color=FFB547&text_color=B9C1CF&icon_color=FFB547&border_color=243049&hide_border=false
           path: assets/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
@@ -106,20 +97,15 @@ jobs:
               pushed = datetime.fromisoformat(repo['pushed_at'].replace('Z', '+00:00'))
               language = html.escape(repo.get('language') or 'Não identificada')
               body = (
-                  f'💻 Repositório público com push mais recente: <a href="{link}">{label}</a>\n\n'
-                  f'🧩 Linguagem principal: {language}  \n'
-                  f'🕒 Último push: {pushed:%d/%m/%Y às %H:%M} UTC\n\n'
-                  '<sub>Atividade do repositório; pode incluir pushes de colaboradores ou bots.</sub>'
+                  f'<p align="center"><sub>Último push público: <a href="{link}">{label}</a>, '
+                  f'em {language}, a {pushed:%d/%m/%Y}.</sub></p>'
               )
           else:
-              body = '🌱 Ainda sem repositórios públicos elegíveis para apresentar.'
+              body = '<p align="center"><sub>Ainda sem repositórios públicos para mostrar.</sub></p>'
 
-          today = datetime.now(timezone.utc).strftime('%d/%m/%Y')
-          body += f'\n\n<sub>Última verificação: {today} (UTC).</sub>'
           path = Path('README.md')
           original = path.read_text(encoding='utf-8')
           original = re.sub(r'https://github-readme-stats\.vercel\.app/api/top-langs/\?[^"\s]+', './assets/top-langs.svg', original)
-          original = re.sub(r'https://github-readme-stats\.vercel\.app/api\?[^"\s]+', './assets/stats.svg', original)
           start, end = '<!-- CURRENTLY:START -->', '<!-- CURRENTLY:END -->'
           if original.count(start) != 1 or original.count(end) != 1:
               raise SystemExit('O README deve conter exatamente um par de marcadores CURRENTLY.')
@@ -137,7 +123,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- README.md assets/github-contribution-grid-snake.svg assets/github-contribution-grid-snake-dark.svg assets/stats.svg assets/top-langs.svg
+          git add -- README.md assets/github-contribution-grid-snake.svg assets/github-contribution-grid-snake-dark.svg assets/top-langs.svg
           if git diff --cached --quiet; then
             echo "Sem alterações a publicar."
             exit 0
